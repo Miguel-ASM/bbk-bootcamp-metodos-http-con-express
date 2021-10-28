@@ -33,6 +33,9 @@ body {
     justify-content: flex-start;
 }
 
+button{
+    cursor: pointer;
+}
 
 /* COLOR CLASSES */
 
@@ -72,7 +75,7 @@ main {
 }
 
 .main-column {
-    width: 70%;
+    width: 82.5%;
 }
 
 .side-column {
@@ -82,16 +85,23 @@ main {
 /* PEOPLE LIST */
 table{
     width: 100%;
+    text-align: left;
 }
 
 td,th{
     display: inline-block;
     margin: 0 2em 0;
+    width: 15%;
 }
 
 tr{
-    display: inline-block;
+    display: block;
     padding: 1em 0 1em;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #45B78B;
+  color: white;
 }
 
 tbody{
