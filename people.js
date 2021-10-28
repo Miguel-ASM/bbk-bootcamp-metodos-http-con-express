@@ -1,4 +1,21 @@
-module.exports = [
+const peopleDB = {
+    people : [],
+    newId  : 0,
+    addPerson : function({firstName,lastName,age}){
+        let person = {
+            id: ++this.newId,
+            ...{
+                firstName,
+                lastName,
+                age
+            }
+        };
+        this.people.push(person)
+        return person;
+    }
+}
+
+let people = [
     {
         firstName : "Miguel Ángel",
         lastName  : "Simón Martínez",
@@ -28,5 +45,10 @@ module.exports = [
         firstName : "Adrián",
         lastName  : "Parra Rodríguez",
         age       : 32,
-    }
+    },
+
 ]
+
+people.forEach(person=>peopleDB.addPerson(person));
+
+module.exports = peopleDB;
