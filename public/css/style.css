@@ -1,0 +1,103 @@
+/* GENERAL LAYOUT */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.layout-padding {
+    padding: 1rem 2rem 1rem;
+}
+
+#mainContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* COLOR CLASSES */
+
+.dark {
+    background-color: #0B4B33;
+    color: white;
+}
+
+.medium-light {
+    background-color: #45B78B;
+    color: white;
+}
+
+.light {
+    background-color: #F8F8F8;
+    color: black;
+}
+
+
+/* HEADER OF THE PAGE */
+
+header {
+    background-color: white;
+    width: 100%;
+}
+
+
+/* MAIN CONTENT OF THE PAGE */
+
+main {
+    flex-grow: 1;
+}
+
+.two-column-main {
+    display: flex;
+    width: 100%;
+}
+
+.main-column {
+    width: 70%;
+}
+
+.side-column {
+    flex-grow: 1;
+}
+
+/* PEOPLE LIST */
+table{
+    width: 100%;
+}
+
+td,th{
+    display: inline-block;
+    margin: 0 2em 0;
+}
+
+tr{
+    display: inline-block;
+    padding: 1em 0 1em;
+}
+
+tbody{
+    display: block;
+    overflow: auto;
+    height: 60vh;
+}
+
+/* FOOTER */
