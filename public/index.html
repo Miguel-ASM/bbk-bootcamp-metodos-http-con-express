@@ -21,13 +21,13 @@
             <div class="side-column light layout-padding">
                 <h3>Add a person</h3>
                 <form id="addPersonForm">
-                    <div class="addPersonFormGroup">
+                    <div class="formGroup">
                         <input id="addPersonFirstName" type="text" name="firstName" required placeholder="First Name">
                     </div>
-                    <div class="addPersonFormGroup">
+                    <div class="formGroup">
                         <input id="addPersonLastName" type="text" name="lastName" required placeholder="Last Name">
                     </div>
-                    <div class="addPersonFormGroup">
+                    <div class="formGroup">
                         <input id="addPersonAge" type="number" name="age" required placeholder="Age">
                     </div>
                     <button type="submit"><i class="fa fa-user-plus"></i></button>
@@ -56,26 +56,28 @@
         <!-- The Modal window that I will use to update users -->
         <div id="myModal" class="modal">
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modal-window">
                 <span class="close">&times;</span>
-                <h3>Updating [name] [apellido]</h3>
-                <form id="updatePersonForm">
-                    <div class="formGroup">
-                        <label for="updateFirstName">First Name</label>
-                        <input name="firstName" id="updateFirstName" type="text" required>
-                    </div>
-                    <div class="formGroup">
-                        <label for="updateLastName">Last Name</label>
-                        <input name="lastName" id="updateLastName" type="text" required>
-                    </div>
-                    <div class="formGroup">
-                        <label for="updateAge">Age</label>
-                        <input name="age" id="updateAge" type="number" required>
-                    </div>
-                    <div class="formGroup">
-                        <button type="submit"><i class="fa fa-pencil"></i></button>
-                    </div>
-                </form>
+                <div class="modal-content">
+                    <h3>Updating [name] [apellido]</h3>
+                    <form id="updatePersonForm">
+                        <div class="formGroup">
+                            <label for="updateFirstName">First Name:</label>
+                            <input name="firstName" id="updateFirstName" type="text" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="updateLastName">Last Name:</label>
+                            <input name="lastName" id="updateLastName" type="text" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="updateAge">Age:</label>
+                            <input name="age" id="updateAge" type="number" required>
+                        </div>
+                        <div class="formGroup">
+                            <button type="submit"><i class="fa fa-pencil"></i></button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <footer class="medium-light layout-padding">

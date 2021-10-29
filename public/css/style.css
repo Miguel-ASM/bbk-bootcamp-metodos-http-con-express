@@ -34,7 +34,13 @@ body {
 }
 
 button{
+    border-width: 0;
+}
+
+button:hover{
     cursor: pointer;
+    background-color: #0B4B33;
+    color: white;
 }
 
 /* COLOR CLASSES */
@@ -99,6 +105,11 @@ tr{
     padding: 1em 0 1em;
 }
 
+td button{
+    border-radius: 0.25em;
+    font-size: 1em;
+}
+
 tbody tr:nth-child(odd){
   background-color: #45B78B;
   color: white;
@@ -107,7 +118,13 @@ tbody tr:nth-child(odd){
 tbody{
     display: block;
     overflow: auto;
-    height: 60vh;
+    height: 55vh;
+}
+
+/* FORM FOR ADDING NEW PERSON */
+#addPersonForm button{
+    font-size: 1em;
+    width: 100%;
 }
 
 
@@ -128,12 +145,16 @@ tbody{
 }
 
 /* Modal Content */
-.modal-content {
+.modal-window {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
+  padding: 1em;
+  width: 30%;
+  border-radius: 1em;
+}
+
+.modal-content{
+    padding: 3em;
 }
 
 /* The Close Button */
@@ -151,8 +172,22 @@ tbody{
   cursor: pointer;
 }
 
-.modal-content form > *{
+.modal-window form > *{
     margin: auto;
+}
+
+.formGroup input{
+    width: 100%;
+    margin: 1em 0 1em;
+}
+
+#updatePersonForm button[type="submit"]{
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+    margin:  2em auto 1em;
+    display: block;
+    border-radius: 0.5em;
 }
 
 /* FOOTER */
