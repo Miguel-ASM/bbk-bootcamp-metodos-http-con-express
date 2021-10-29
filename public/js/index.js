@@ -119,10 +119,10 @@ function createPersonHtml(person){
     <td>${person.age}</td>
     <td>
         <button class="editPersonButton">
-            edit
+            <i class="fa fa-pencil"></i>
         </button>
         <button class="removePersonButton">
-            remove
+            <i class="fa fa-trash"></i>
         </button>
     </td>
     `
@@ -158,6 +158,7 @@ function createPersonHtml(person){
         updatPersonForm.elements['lastName'].value  = rowData[1].innerHTML;
         updatPersonForm.elements['age'].value       = rowData[2].innerHTML;
         // Display the form
+        myModal.querySelector('h3').innerHTML = `Updating ${rowData[0].innerHTML}`
         myModal.style.display = "block";
     })
 }
